@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALUD Y BIENESESTAR</title>
+    <link rel="stylesheet" href="../css/stilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <style>
+    /* body {
+            padding-top: 56px; /* Ajusta la altura del navbar */
+        /*} */
+
+        header{
+          margin-top: 8.3px;
+        }
+
+        footer{
+          margin-bottom: 0px;
+          margin-top: 15px;
+        }
+
+        .py-5.bg-dark {
+          margin-bottom: -70px;
+        } 
+
+        /* .container{
+          margin-bottom: auto;
+        } */
+
+        input {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        .btn.btn-primary {
+          margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+        <nav role="navigation" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Salud y Bienestar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#recursos">Recursos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#historias">Historias</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#bienestar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bienestar
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#bienestar-mental">Bienestar Mental</a></li>
+                <li><a class="dropdown-item" href="#bienestar-personal">Bienestar Personal</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-selected="true" href="#contacto">Contacto</a>
+              </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+              <!-- añadir un boton que reproduzca por audio la pagina web -->
+              <a class="btn btn-outline-success" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06" /></svg></a>
+              <!-- aria-label="..." on the control -->
+              <!--  <button aria-label="Play" class="btn btn-primary" type="button" style="vertical-align: middle;">-->
+                <!-- <i class="bi bi-volume-up-fill"> --><!-- Escuchar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                  <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                  <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06" />
+                </svg> --><!-- </i> -->
+              <!--</button> -->
+            </div>
+          </div>
+        </nav>
+
+      <!-- <header id="mainHeader" style="background-image: url('../bootstrapOpenWebinars/assets/img/istockphoto-1400623377-1024x1024.jpg');">
+        <div class="container position-relative px-lg-5">
+            <div class="row">
+                <div class="mx-auto col-lg-7 col-xl-6 col-md-12">
+                    <h1>Bienvenido a mi Tienda</h1>
+                    <p>Compra juegos al mejor precio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit libero, maiores provident numquam tempora, dolore aperiam quaerat saepe excepturi hic unde nostrum repellat laboriosam mollitia voluptas neque officiis fuga quos...</p>
+                </div>
+            </div>
+        </div>
+
+    </header> -->
+
+    <br><br>
+
+    <!-- Cabecera -->
+    <header class="bg-primary text-white text-center">
+      <div class="container">
+          <h1 class="display-4">Cuida tu Salud y Bienestar</h1>
+          <p class="lead">Encuentra recursos y apoyo para cuidar tu salud física, mental y bienestar <!-- personal --></p>
+          <p>Encuentra recursos  para una vida saludable</p>
+      </div>
+    </header>
+
+      <!-- Sección Principal -->
+    <section id="principal" class="bg-primary text-white py-5">
+      <div class="container text-center">
+          <h1 class="display-4">Cuida tu Salud y Bienestar</h1>
+          <p class="lead">Encuentra recursos para promover tu salud física, mental y bienestar personal.</p>
+          <button aria-label="Play" class="btn btn-md btn-outline-light" type="button" style="vertical-align: middle;">
+            <!-- <i class="bi bi-volume-up-fill"> --> Escuchar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+              <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+              <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+              <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06" />
+            </svg> <!-- </i> -->
+          </button>
+          <!-- <a href="#recursos" class="btn btn-lg btn-outline-light mt-3">Explorar Recursos</a> -->
+      </div>
+    </section>
+
+  <section id="recursos">
+    <div class="container">
+        <h2 class="text-center">Recursos</h2>
+        <!-- Tarjetas con enlaces a recursos para la salud física -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Ejercicios para mantenerse activo</h5>
+                <p class="card-text">Descubre rutinas de ejercicios para mejorar tu salud física.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Recetas de todo tipo para cocinar</h5>
+                    <p class="card-text">Aprende sobre recetas saludables y ricas.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+
+        <!-- Tarjetas con enlaces a recursos para la salud mental -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Meditaciones guiadas</h5>
+                <p class="card-text">Encuentra meditaciones para promover el bienestar mental y la relajación.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+              <h5 class="card-title">Enfermedades y Trastornos</h5>
+              <p class="card-text">Encuentra información sobre enfermedades y trastornos.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+
+        <!-- Tarjetas con enlaces a recursos para el bienestar personal -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Consejos para el autocuidado</h5>
+                <p class="card-text">Aprende sobre prácticas de bienestar personal y cuidado propio.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Tarjetas con enlaces a recursos para el cuidado del sueño -->
+        <div class="card mb-2">
+          <div class="card-body">
+              <h5 class="card-title">Higiene del Sueño</h5>
+              <p class="card-text">Aprende sobre prácticas de bienestar personal y cuidado propio.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+      </div>
+
+    </div>
+</section>
+
+
+
+ <div class="row mb-2">
+  <div class="col-md-6">
+   <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col p-4 d-flex flex-column position-static"><strong class="d-inline-block mb-2 text-primary-emphasis"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vídeos de entrenamiento</font></font></strong>
+     <h3 class="mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Publicación destacada</font></font></h3>
+     <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      12 de noviembre
+     </font></font></div>
+     <p class="card-text mb-auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ejercicio con entrenadores personales certificados si Estás en casa o en la carretera.
+      Encontrar un entrenamiento
+      Tasha doing a Fitness Blender workout video .</font></font></p><a href="https://getbootstrap-com.translate.goog/docs/5.3/examples/blog/?_x_tr_sl=auto&amp;_x_tr_tl=es&amp;_x_tr_hl=es#" class="icon-link gap-1 icon-link-hover stretched-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sigue leyendo 
+      </font></font><svg class="bi">
+       <use xlink:href="#chevron-right"></use>
+      </svg></a>
+    </div>
+    <div class="col-auto d-none d-lg-block">
+     <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+       Thumbnail
+      </text>
+     </svg>
+    </div>
+   </div>
+  </div>
+  <div class="col-md-6">
+   <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col p-4 d-flex flex-column position-static"><strong class="d-inline-block mb-2 text-success-emphasis"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">inspiración</font></font></strong>
+     <h3 class="mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Artículos de bienestar</font></font></h3>
+     <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      11 de noviembre
+     </font></font></div>
+     <p class="mb-auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Artículos respaldados por la investigación para ayudarle a cuidar de su cuerpo <!-- y mente -->.</font></font></p><a href="https://getbootstrap-com.translate.goog/docs/5.3/examples/blog/?_x_tr_sl=auto&amp;_x_tr_tl=es&amp;_x_tr_hl=es#" class="icon-link gap-1 icon-link-hover stretched-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aprender <!-- de los expertos -->
+      </font></font><svg class="bi">
+       <use xlink:href="#chevron-right"></use>
+      </svg></a>
+    </div>
+    <div class="col-auto d-none d-lg-block">
+     <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <title>Beneficios para la salud de la actividad física</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+        Beneficios <!-- para la salud --> de la actividad física
+      </text>
+     </svg>
+    </div>
+   </div>
+  </div>
+ </div> 
+
+
+  <!-- Sección de Historias Personales -->
+  <!--<section id="historias" class="bg-light">
+      <div class="container">
+          <h2 class="text-center">Historias Personales</h2>-->
+          <!-- testimonios y historias relacionadas con la salud y bienestar -->
+          
+      <!-- </div> 
+  </section>-->
+
+  <!-- Sección de Bienestar Mental -->
+  <section id="bienestar-mental">
+      <div class="container">
+          <h2 class="text-center">Bienestar Mental</h2>
+          <!-- inf y recursos para el bienestar mental -->
+          <!-- Contenido sobre bienestar mental -->
+        <p>
+          En esta sección, encontrarás información valiosa y recursos que promueven el bienestar mental.
+          Desde técnicas de manejo del estrés hasta consejos para mantener una mente saludable.
+      </p>
+      <b>Técnicas para manejar el estrés:</b>
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+           <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
+             <title>5 pasos hacia el bienestar mental</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="35%" y="50%" fill="#eceeef" dy=".3em">
+              5 pasos hacia el bienestar mental<!-- La evidencia sugiere que hay cinco pasos que puede seguir para mejorar su salud mental y su bienestar. Probar estas cosas podría ayudarte a sentirte más positivo y capaz de aprovechar al máximo la vida. -->
+             </text>
+            </svg>
+            <div class="card-body">
+             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La evidencia sugiere que hay cinco pasos que puede seguir para mejorar su salud mental y su bienestar. Probar estas cosas podría ayudarte a sentirte más positivo y capaz de aprovechar al máximo la vida.</font></font></p>
+             <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+              </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col">
+           <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
+             <title>Consejos para situaciones y acontecimientos de la vida.</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="40%" y="50%" fill="#eceeef" dy=".3em">
+              Consejos para situaciones y acontecimientos de la vida.
+             </text>
+            </svg>
+            <div class="card-body">
+             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asesoramiento y apoyo para tu salud mental en situaciones y acontecimientos de la vida.</font></font></p>
+             <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+              </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col">
+           <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
+             <title>Sueño y cansancio</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+              Sueño y cansancio
+             </text>
+            </svg>
+            <div class="card-body">
+             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Razones por las que podrías sentirte cansado y consejos sobre qué puedes hacer para prevenir el cansancio.contenido adicional.</font></font></p>
+             <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+              </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col">
+           <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
+             <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+              Thumbnail
+             </text>
+            </svg>
+            <div class="card-body">
+             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es una tarjeta más amplia con texto de apoyo a continuación como introducción natural al contenido adicional. Este contenido es un poco más largo.</font></font></p>
+             <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+              </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col">
+           <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
+             <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+              Thumbnail
+             </text>
+            </svg>
+            <div class="card-body">
+             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es una tarjeta más amplia con texto de apoyo a continuación como introducción natural al contenido adicional. Este contenido es un poco más largo.</font></font></p>
+             <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+              </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="col">
+           <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
+             <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+              Thumbnail
+             </text>
+            </svg>
+            <div class="card-body">
+             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es una tarjeta más amplia con texto de apoyo a continuación como introducción natural al contenido adicional. Este contenido es un poco más largo.</font></font></p>
+             <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
+              </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      <br>
+      <i>Consejos:</i>
+      </div>
+  </section>
+
+  <!-- <p><abbr title="attribute">attr</abbr></p>
+  <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p> -->
+
+  <!-- Sección de Bienestar Personal -->
+  <section id="bienestar-personal">
+      <div class="container">
+          <h2 class="text-center">Bienestar Físico <!-- Personal --></h2>
+          <!-- recursos para el bienestar personal -->
+          <!-- Contenido sobre bienestar personal -->
+        <p>
+          Descubre prácticas y consejos para el bienestar personal, que incluyen el cuidado emocional,
+          la autocompasión y la construcción de hábitos saludables en tu vida diaria.
+      </p>
+      </div>
+  </section>
+
+
+  <!-- Sección de Contacto -->
+  <section id="contacto">
+      <div class="container /*d-flex*/ justify-content-center">
+          <h2 class="text-center">Contacto</h2>
+          <!-- formulario de contacto -->
+          <!-- formulario para contactar con profesionales, como psicologos, terapeutas, alimentadores profesionales, medicos, ... -->
+          <form action="../html/INICIO.html" style="border: 2px solid #ccc; /* border-radius: 5px; */ padding: 10px; /* margin: auto; */ width: 500px; /* justify-content: center; */">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" value="Nombre">
+            <br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" value="Apellidos">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" value="Email">
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" placeholder="Mensaje" value="Mensaje"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+          </form>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+      <div class="container">
+          <p class="m-0 text-center text-white">© Salud y Bienestar</p>
+      </div>
+  </footer>
+
+      <br><br><br>
+
+      <!-- <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Bienestar
+        </button>
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" type="button">bienestar-mental</button></li>
+          <li><button class="dropdown-item" type="button">bienestar-personal</button></li>
+          <li><button class="dropdown-item" type="button">Dropdown item</button></li>
+        </ul>
+      </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+    <!-- <script>
+
+    </script> -->
+
+</body>
+</html>
