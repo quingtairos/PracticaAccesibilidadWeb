@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SALUD Y BIENESESTAR</title>
-    <link rel="stylesheet" href="../css/stilos.css">
+    <!-- <link rel="stylesheet" href="../css/stilos.css"> -->
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -45,20 +45,25 @@
         .btn.btn-primary {
           margin-left: 5px;
         }
+
+        .getty embed image{
+          text-decoration: none;
+          visibility: hidden;
+        }
     </style>
 </head>
 <body>
 
         <nav role="navigation" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="./INICIO.html#INICIO">Salud y Bienestar</a>
+            <a class="navbar-brand" href="./INICIO.html">Salud y Bienestar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#recursos">Recursos</a>
@@ -77,12 +82,12 @@
                 </ul>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" aria-selected="true" href="#contacto">Contacto</a>
+                  <a class="nav-link" href="#contacto">Contacto</a>
               </li>
               </ul>
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <button class="btn btn-outline-info" type="submit">Buscar</button>
               </form>
               <!-- añadir un boton que reproduzca por audio la pagina web -->
               <a class="btn btn-outline-success" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
@@ -127,7 +132,7 @@
     </header>
 
       <!-- Sección Principal -->
-    <section id="principal" class="bg-primary text-white py-5">
+    <section id="inicio" class="bg-primary text-white py-5">
       <div class="container text-center">
           <h1 class="display-4">Cuida tu Salud y Bienestar</h1>
           <p class="lead">Encuentra recursos para promover tu salud física, mental y bienestar personal.</p>
@@ -202,16 +207,6 @@
 
 
 
-
-  <!-- Sección de Historias Personales -->
-  <!--<section id="historias" class="bg-light">
-      <div class="container">
-          <h2 class="text-center">Historias Personales</h2>-->
-          <!-- testimonios y historias relacionadas con la salud y bienestar -->
-          
-      <!-- </div> 
-  </section>-->
-
   <!-- Sección de Bienestar Mental -->
   <section id="bienestar-mental">
       <div class="container">
@@ -227,48 +222,58 @@
         <div class="container">
          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
-           <div class="card shadow-sm">
-            <img  src="../imagenes/gettyimages-556561965-170667a.jpg" alt="imagen">
-           <!--  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
-             <title>5 pasos hacia el bienestar mental</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="35%" y="50%" fill="#eceeef" dy=".3em">
-              5 pasos hacia el bienestar mental<!-- La evidencia sugiere que hay cinco pasos que puede seguir para mejorar su salud mental y su bienestar. Probar estas cosas podría ayudarte a sentirte más positivo y capaz de aprovechar al máximo la vida. -->
-             <!--</text>
-            </svg> -->
-            <div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:565px;">
-              <div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/1356792064" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:54.15929% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1356792064?et=hp0UIEctRqto-FVFB4LR1g&tld=com&sig=BzllPeTjbdTYzT_phnms_tGrxjFQHXSz33GWDkKCDvc=&caption=true&ver=1" scrolling="no" frameborder="0" width="565" height="306" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div>
-            </div>
+           <div class="card h-100 shadow-sm">
+            <!-- <title>5 pasos hacia el bienestar mental</title> -->
+            <h3>5 pasos hacia el bienestar mental</h3>
+            <img src="../imagenes/istockphoto-1305326620-1024x1024.jpg" alt="imagen de un hombre cantando en el coche" focusable="false" role="img" width="100%" height="225">
+<!--             <img  src="../imagenes/gettyimages-556561965-170667a.jpg" alt="imagen" focusable="false" role="img" width="100%" height="225">
+ -->            <!-- <div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:565px;">
+              <div style="padding:0;margin:0;text-align:left;">
+                <a href="http://www.gettyimages.com/detail/1356792064" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a>
+              </div>
+              <div style="overflow:hidden;position:relative;height:0;padding:54.15929% 0 0 0;width:100%;">
+                <iframe src="//embed.gettyimages.com/embed/1356792064?et=hp0UIEctRqto-FVFB4LR1g&tld=com&sig=BzllPeTjbdTYzT_phnms_tGrxjFQHXSz33GWDkKCDvc=&caption=true&ver=1" scrolling="no" frameborder="0" width="565" height="306" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe>
+              </div>
+            </div> -->
             <div class="card-body">
-             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La evidencia sugiere que hay cinco pasos que puede seguir para mejorar su salud mental y su bienestar. Probar estas cosas podría ayudarte a sentirte más positivo y capaz de aprovechar al máximo la vida.</font></font></p>
+             <p class="card-text">La evidencia sugiere que hay cinco pasos que puede seguir para mejorar su salud mental y su bienestar. Probar estas cosas podría ayudarte a sentirte más positivo y capaz de aprovechar al máximo la vida.</p>
              <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
-              </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;">Vista</font></button> 
+                <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;">Editar</font></button>
+              </div>
+              <small class="text-body-secondary">9 minutos</small>
              </div>
             </div>
            </div>
           </div>
           <div class="col">
-           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
+           <div class="card h-100 shadow-sm">
+            <h4>Consejos para situaciones y acontecimientos de la vida.</h4>
+            <img src="../imagenes/kaylee-garrett-GaprWyIw66o-unsplash.jpg" alt="imagen de gente haciendo yoga" title="Consejos para situaciones y acontecimientos de la vida.">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
              <title>Consejos para situaciones y acontecimientos de la vida.</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="40%" y="50%" fill="#eceeef" dy=".3em">
               Consejos para situaciones y acontecimientos de la vida.
              </text>
-            </svg>
+            </svg> -->
             <div class="card-body">
-             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asesoramiento y apoyo para tu salud mental en situaciones y acontecimientos de la vida.</font></font></p>
+             <p class="card-text">
+              Asesoramiento y apoyo para tu salud mental en situaciones y acontecimientos de la vida.
+            </p>
              <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
-              </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;">Vista</font></button> 
+                <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;">Editar</font></button>
+              </div>
+              <small class="text-body-secondary"><font style="vertical-align: inherit;">9 minutos</font></small>
              </div>
             </div>
            </div>
           </div>
           <div class="col">
-           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
-             <title>Sueño y cansancio</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
-              Sueño y cansancio
-             </text>
-            </svg>
+           <div class="card h-100 shadow-sm">
+            <h4>Sueño y cansancio</h4>
+            <img src="../imagenes/pexels-andrea-piacquadio-3771069.jpg" alt="hombre durmiendo" title="Sueño y cansancio">
             <div class="card-body">
              <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Razones por las que podrías sentirte cansado y consejos sobre qué puedes hacer para prevenir el cansancio.contenido adicional.</font></font></p>
              <div class="d-flex justify-content-between align-items-center">
@@ -278,17 +283,13 @@
             </div>
            </div>
           </div>
+
           <div class="col">
-           <div class="card shadow-sm">
+           <div class="card h-100 shadow-sm">
             <figure class="figure">
-              <img src="../imagenes/pexels-natalie-bond-3759657.jpg" class="figure-img img-fluid rounded" alt="...">
+              <img src="../imagenes/pexels-natalie-bond-3759657.jpg" class="figure-img img-fluid rounded" alt="imagen de paz mental">
               <figcaption class="figure-caption">A caption for the above image.</figcaption>
             </figure>
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
-             <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
-              Thumbnail
-             </text>
-            </svg>
             <div class="card-body">
              <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es una tarjeta más amplia con texto de apoyo a continuación como introducción natural al contenido adicional. Este contenido es un poco más largo.</font></font></p>
              <div class="d-flex justify-content-between align-items-center">
@@ -298,69 +299,36 @@
             </div>
            </div>
           </div>
-          <div class="col">
-           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
-             <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
-              Thumbnail
-             </text>
-            </svg>
-            <div class="card-body">
-             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es una tarjeta más amplia con texto de apoyo a continuación como introducción natural al contenido adicional. Este contenido es un poco más largo.</font></font></p>
-             <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
-              </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
-             </div>
-            </div>
-           </div>
-          </div>
-          <div class="col">
-           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
-             <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
-              Thumbnail
-             </text>
-            </svg>
-            <div class="card-body">
-             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es una tarjeta más amplia con texto de apoyo a continuación como introducción natural al contenido adicional. Este contenido es un poco más largo.</font></font></p>
-             <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
-              </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
-             </div>
-            </div>
-           </div>
-          </div>
+
          </div>
         </div>
        </div>
-      <br>
-      <i>Consejos:</i>
-      
-      <a class="icon-link icon-link-hover" href="#">
-        Icon link
-        <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-      </a>
-      </div>
-  </section>
 
-  <!-- <p><abbr title="attribute">attr</abbr></p>
-  <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p> -->
+
+  <a class="icon-link icon-link-hover" href="#">
+    Si quieres seguir leyendo haz click aquí
+    <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
+  </a>
+  </div>
+</section>
+
+
 
   <!-- Sección de Bienestar Personal -->
   <section id="bienestar-personal">
       <div class="container">
-          <h2 class="text-center">Bienestar Físico <!-- Personal --></h2>
-          <!-- recursos para el bienestar personal -->
-          <!-- Contenido sobre bienestar personal -->
+          <h2 class="text-center">Bienestar Físico</h2>
         <p>
           Descubre prácticas y consejos para el bienestar personal, que incluyen el cuidado emocional,
           la autocompasión y la construcción de hábitos saludables en tu vida diaria.
       </p>
-      <div class="row mb-2">
+      <div class="row mb-3">
         <div class="col-md-6">
          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static"><strong class="d-inline-block mb-2 text-primary-emphasis"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vídeos de entrenamiento</font></font></strong>
            <h3 class="mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Publicación destacada</font></font></h3>
+           <!-- <video src="" alt="" type="" controls="play" title="video de entrenamiento"></video> -->
+           <iframe width="598" height="337" src="https://www.youtube.com/embed/ssmSZy0X6ZY" title="ELIMINA LA FLACIDEZ DE LOS BRAZOS con esta rutina de CARDIO con PESO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
            <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
             12 de noviembre
            </font></font></div>
@@ -395,12 +363,13 @@
             </svg></a>
           </div>
           <div class="col-auto d-none d-lg-block">
+            <title>Beneficios para la salud de la actividad física</title>
            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Beneficios para la salud de la actividad física</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">
               Beneficios <!-- para la salud --> de la actividad física
             </text>
             </svg>
-            <div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:509px;">
+            <div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7aa;font-size:11px;width:100%;max-width:509px;">
               <div style="padding:0;margin:0;text-align:left;">
                 <a href="http://www.gettyimages.com/detail/1356788190" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a>
               </div>
@@ -467,7 +436,9 @@ Tiempo: 20 minutos
          </div>
          
 
-         <div class="card" style="width: 18rem;">
+         <!-- 
+          
+          <div class="card" style="width: 18rem;">
           <img src="../imagenes/pexels-cottonbro-studio-4101143.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -482,7 +453,7 @@ Tiempo: 20 minutos
             <a href="#" class="card-link">Card link</a>
             <a href="#" class="card-link">Another link</a>
           </div>
-        </div>
+        </div> -->
 
 
 
@@ -501,6 +472,27 @@ Tiempo: 20 minutos
         </div>
 
         
+
+        <div class="d-flex position-relative">
+          <img src="../imagenes/istockphoto-1257932212-1024x1024.jpg" class="flex-shrink-0 me-3" alt="imagen de gente jugando al futbol">
+          <div>
+            <h5 class="mt-0">Custom component with stretched link</h5>
+            <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+            <a href="#" class="stretched-link">Go somewhere</a>
+          </div>
+        </div>
+  
+    
+    <div class="row g-0 bg-body-secondary position-relative">
+      <div class="col-md-6 mb-md-0 p-md-4">
+        <img src="../imagenes/gettyimages-1345199734-170667a.jpg" class="w-100" alt="imagen de un bol de ensalada">
+      </div>
+      <div class="col-md-6 p-4 ps-md-0">
+        <h5 class="mt-0">Columns with stretched link</h5>
+        <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+        <a href="#" class="stretched-link">Go somewhere</a>
+      </div>
+    </div>
 
 
         
@@ -846,18 +838,7 @@ Tiempo: 20 minutos
       </div>
   </footer>
 
-      <br><br><br>
-
-      <!-- <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Bienestar
-        </button>
-        <ul class="dropdown-menu">
-          <li><button class="dropdown-item" type="button">bienestar-mental</button></li>
-          <li><button class="dropdown-item" type="button">bienestar-personal</button></li>
-          <li><button class="dropdown-item" type="button">Dropdown item</button></li>
-        </ul>
-      </div> -->
+      <!-- <br><br><br> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
