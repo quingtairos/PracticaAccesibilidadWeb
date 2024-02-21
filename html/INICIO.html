@@ -54,6 +54,10 @@
         label{
           border: none;
         }
+        .img-fluid{
+          max-width: max-content;
+          height: 200px;
+        }
     </style>
 </head>
 <body>
@@ -290,12 +294,13 @@
 
           <div class="col">
            <div class="card h-100 shadow-sm">
-            <figure class="figure">
-              <img src="../imagenes/pexels-natalie-bond-3759657.jpg" class="figure-img img-fluid rounded" alt="imagen de paz mental">
-              <figcaption class="figure-caption">A caption for the above image.</figcaption>
-            </figure>
+            <h5 class="mb-3">Manejo del estrés</h5>
+          <!--   <figure class="figure"> -->
+              <img src="../imagenes/pexels-natalie-bond-3759657.jpg" class="figure-img img-fluid rounded" alt="imagen de paz mental" title="Manejo del estrés" height="200px" width="300px">
+              <!-- <figcaption class="figure-caption">Manejo del estrés</figcaption> 
+            </figure>-->
             <div class="card-body">
-             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es una tarjeta más amplia con texto de apoyo a continuación como introducción natural al contenido adicional. Este contenido es un poco más largo.</font></font></p>
+             <p class="card-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evite que el estrés lo enferme aprendiendo maneras saludables para manejarlo y APRENDA A RECONOCER EL ESTRÉS. </font></font></p>
              <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group"><button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vista</font></font></button> <button type="button" class="btn btn-sm btn-outline-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Editar</font></font></button>
               </div><small class="text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9 minutos</font></font></small>
@@ -326,7 +331,7 @@
           Descubre prácticas y consejos para el bienestar personal, que incluyen el cuidado emocional,
           la autocompasión y la construcción de hábitos saludables en tu vida diaria.
       </p>
-      <div class="row mb-3">
+      <div class="row mb-2">
         <div class="col-md-6">
          <div class="row g-0 border rounded flex-md-row overflow-auto mb-4 shadow-sm position-relative">
           <div class="col p-4 d-flex flex-column position-static"><strong class="d-inline-block mb-2 text-primary-emphasis"><font style="vertical-align: inherit;">Vídeos de entrenamiento</font></strong>
@@ -429,7 +434,7 @@
 
         
 
-        <div class="card mb-3" style="max-width: 540px;">
+        <div class="card mb-3 h-100" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-6">
               <img src="../imagenes/istockphoto-171095033-1024x1024.jpg" class="img-fluid rounded-start" alt="...">
@@ -446,7 +451,7 @@
 
 
 
-        <div class="card-group">
+<!--         <div class="card-group">
           <div class="card">
             <img src="../imagenes/istockphoto-1707927462-1024x1024.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -503,11 +508,11 @@
               <small class="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card">
               <img src="../imagenes/istockphoto-1286170766-1024x1024.jpg" class="card-img-top" alt="...">
@@ -537,7 +542,7 @@
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="col">
             <div class="card">
               <img src="../imagenes/istockphoto-1160789077-1024x1024.jpg" class="card-img-top" alt="...">
@@ -546,8 +551,8 @@
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
             </div>
-          </div> -->
-        </div>
+          </div> 
+        </div>-->
 
 
         <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -606,18 +611,15 @@
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre:</label>
               <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" value="Nombre">
-              </div>
-            <br>
+            </div>
             <div class="mb-3">
               <label for="apellidos" class="form-label">Apellidos:</label>
               <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" value="Apellidos">
           </div>
-            <br>
             <div class="mb-3">
               <label for="email" class="form-label">Email:</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="Email" required>
           </div>
-            <br>
             <div class="row mb-3">
               <div class="col">
                   <label for="profesion" class="form-label">Profesión:</label>
@@ -628,7 +630,6 @@
                   <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" value="Mensaje" required></textarea>
               </div>
           </div>
-            <br>
             <button type="submit" class="btn btn-primary" value="Enviar">Enviar</button>
           </form>
       </div>
